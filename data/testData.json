@@ -1,0 +1,116 @@
+{
+  "users": [
+    {
+      "name": "Test User",
+      "email": "test_user@example.com",
+      "password": "TestPassword123!",
+      "gender": "Mr",
+      "days": "10",
+      "months": "May",
+      "years": "1995",
+      "newsletter": true,
+      "specialOffers": true,
+      "firstName": "Jon",
+      "lastName": "Doe",
+      "company": "Morel",
+      "address1": "Fake Street",
+      "address2": "Real Street",
+      "country": "Canada",
+      "state": "Cordoba",
+      "city": "Capital",
+      "zipcode": "5000",
+      "mobileNumber": "1234567890"
+    }
+  ],
+  "searchProducts": [
+    "t-shirt",
+    "dress",
+    "jeans"
+  ],
+  "invalidUser": {
+    "email": "invalid_email_antigravity@example.com",
+    "password": "wrongpassword123"
+  },
+  "contactUs": {
+    "name": "Jon Doe",
+    "email": "jondoe@example.com",
+    "subject": "Automation test",
+    "message": "This is an automated message sent to verify the contact form submission.",
+    "filePath": "data/upload.txt"
+  },
+  "productDetails": {
+    "expectedLabels": {
+      "category": "Category:",
+      "availability": "Availability:",
+      "condition": "Condition:",
+      "brand": "Brand:"
+    }
+  },
+  "subscription": {
+    "email": "jondoe_sub@example.com",
+    "successMessage": "You have been successfully subscribed!"
+  },
+  "cartProducts": [
+    {
+      "name": "Blue Top",
+      "price": "Rs. 500",
+      "quantity": "1",
+      "total": "Rs. 500"
+    },
+    {
+      "name": "Men Tshirt",
+      "price": "Rs. 400",
+      "quantity": "1",
+      "total": "Rs. 400"
+    }
+  ],
+  "quantityVerification": {
+    "productIndex": 0,
+    "quantity": "4",
+    "name": "Blue Top",
+    "price": "Rs. 500",
+    "total": "Rs. 2000"
+  },
+  "paymentDetails": {
+    "nameOnCard": "Jon Doe",
+    "cardNumber": "4000123456789010",
+    "cvc": "123",
+    "expiryMonth": "12",
+    "expiryYear": "2030"
+  },
+  "productReview": {
+    "name": "Jon Doe",
+    "email": "reviewer@example.com",
+    "comment": "This is a wonderful product with excellent quality. Highly recommended!"
+  },
+  "checkoutComment": "Downloading invoice for order verification.",
+  "carousel": {
+    "headerText": "Full-Fledged practice website for Automation Engineers"
+  },
+  "categories": {
+    "women": {
+      "name": "Women",
+      "subcategory": "Dress",
+      "expectedTitle": "Women - Dress Products",
+      "urlPath": "/category_products/1"
+    },
+    "men": {
+      "name": "Men",
+      "subcategory": "Tshirts",
+      "expectedTitle": "Men - Tshirts Products",
+      "urlPath": "/category_products/3"
+    }
+  },
+  "brands": {
+    "polo": {
+      "name": "Polo",
+      "expectedTitle": "Brand - Polo Products",
+      "urlPath": "/brand_products/Polo"
+    },
+    "hm": {
+      "name": "H&M",
+      "expectedTitle": "Brand - H&M Products",
+      "urlPathRegex": "/brand_products/H(%26|&)M"
+    }
+  }
+}

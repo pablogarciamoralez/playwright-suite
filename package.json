@@ -1,0 +1,26 @@
+{
+  "name": "playwright-suite",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "playwright test",
+    "test:ui": "playwright test --grep-invert \"API\"",
+    "test:api": "playwright test tests/api.spec.ts",
+    "test:auth": "playwright test tests/auth.spec.ts",
+    "test:cart": "playwright test tests/cart.spec.ts",
+    "test:checkout": "playwright test tests/checkout.spec.ts",
+    "test:contact": "playwright test tests/contact.spec.ts",
+    "test:products": "playwright test tests/products.spec.ts",
+    "test:subscription": "playwright test tests/subscription.spec.ts",
+    "test:ui-interactions": "playwright test tests/ui.spec.ts",
+    "report": "playwright show-report"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "@playwright/test": "^1.61.1",
+    "@types/node": "^26.0.0"
+  }
+}
