@@ -14,6 +14,8 @@ jobs:
   test:
     timeout-minutes: 60
     runs-on: ubuntu-latest
+    env:
+      FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
     steps:
     - uses: actions/checkout@v4
 
@@ -47,3 +49,10 @@ jobs:
         github_token: ${{ secrets.GITHUB_TOKEN }}
         publish_dir: ./playwright-report
         keep_files: false
+
+    - name: Output Deployed Report Link
+      if: always()
+      run: |
+        echo "### 📊 Playwright HTML Report Deployed" >> $GITHUB_STEP_SUMMARY
+        echo "The report has been successfully generated and deployed to GitHub Pages." >> $GITHUB_STEP_SUMMARY
+        echo "[👉 View Live Playwright HTML Report](https://${{ github.repository_owner }}.github.io/${{ github.event.repository.name }}/)" >> $GITHUB_STEP_SUMMARY
