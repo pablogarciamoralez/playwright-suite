@@ -130,7 +130,8 @@ The **GitHub Actions** configuration at `.github/workflows/playwright.yml` autom
 5. Runs the entire suite of tests (`npx playwright test`).
 6. **Publishing Reports to GitHub Pages**:
    * Once the tests complete (regardless of whether they pass or fail), the Playwright HTML report folder is uploaded as a build artifact.
-   * Then, the report is deployed to the repository's `gh-pages` branch, automatically updating the static GitHub Pages site for online viewing.
+   * The report folder is then deployed to the repository's `gh-pages` branch, automatically updating the static GitHub Pages site.
+   * **Easy Access**: The workflow writes a direct link to the live report directly inside the GitHub Actions **Job Summary** panel of the run for quick and convenient access.
 
 ### GitHub Pages Setup Instructions
 To successfully host and view the Playwright HTML reports on GitHub Pages, configure the following settings in your GitHub Repository UI:
